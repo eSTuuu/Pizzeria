@@ -1,0 +1,271 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url("/images/patrick-fore-m9qWesqRN0M-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 0.6rem 0;
+    position:fixed;
+}
+
+.nav{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+}
+
+.logo{
+    width:45px;
+    height: 45px;
+}
+
+.logo-link{
+    padding-left: 1rem;
+    width:45px !important;
+    height: 45px !important;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    line-height: 35px;
+    position: relative;
+}
+
+.nav-list a{
+    text-decoration: none;
+    padding:0.3rem 0.4rem;
+}
+
+.nav-list a:hover{
+    font-weight: 600;
+    position: relative;
+    left: -1px;
+    padding-right: 0.30rem;
+}
+
+.nav-list-item{
+    font-size: 20px;
+    
+    color:white;
+}
+
+.nav-list-item:first-child{
+    padding-left:1rem;
+}
+
+.main-section{
+    width:100%;
+    height:100vh;
+    background: transparent;
+}
+
+.title{
+    position: absolute;
+    top: 42%;
+    left:15%;
+    color:white;
+    font-size:80px;
+}
+
+@media only screen and (max-width:900px){
+    .title{
+        top:42%;
+        left:calc(50vw - 277px/2);
+    }
+}
+
+.offer-section{
+    width:100%;
+    height: 62vh;
+    background-image: url('/images/d6iuhnh-22a84a73-8669-48aa-aaac-47e886276b7c.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-offer{
+    text-align: center;
+    font-size:40px;
+    color:white;
+    padding-top:4rem;
+}
+
+.desc{
+    color:white;
+    text-align: center;
+    width:50%;
+    margin: 2rem auto 0 auto;
+    font-size:21px;
+    line-height: 2;
+    overflow-wrap: break-word;
+}
+
+.offer-icons{
+    display: flex;
+    width: 50%;
+    margin: 2rem auto 0 auto;
+    color:white;
+    justify-content: center;
+}
+
+.icons{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-desc{
+    margin-top:0.5rem;
+    text-align: center;
+}
+
+.first-group, .second-group{
+    display: flex;
+}
+
+@media only screen and (max-width:1400px){
+    .desc{
+        font-size:19px;
+    }
+    .icon{
+        width:50px;
+        height: 50px;
+    }
+    .icons-desc{
+        font-size:16px;
+    }
+}
+@media only screen and (max-width:1160px){
+    .desc{
+        font-size:16px;
+    }
+    .icon{
+        width:45px;
+        height: 45px;
+    }
+    .icons{
+        padding:0 1.7rem;
+    }
+    .icons-desc{
+        font-size:13px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .desc{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .desc{
+        font-size:16px;
+        width:70%;
+    }
+    .icon{
+        width:45px;
+        height: 45px;
+    }
+    .icons-desc{
+        font-size:13px;
+    }
+}
+
+@media only screen and (max-width:783px){
+    .desc{
+        font-size:14px;
+    }
+    .icon{
+        width:40px;
+        height: 40px;
+    }
+    .icons-desc{
+        font-size:11px;
+    }
+}
+
+@media only screen and (max-width:730px){
+    .icons{
+        padding: 0 1.4rem;
+    }
+    .desc{
+        width:70%;
+    }
+}
+
+@media only screen and (max-width:688px){
+    .icons{
+        padding: 0 1.4rem;
+    }
+    .desc{
+        width:85%;
+    }
+}
+
+@media only screen and (min-width:321px) and (min-height:400px) and (max-width:600px) and (max-height:812px){
+    .first-group, .second-group{
+        width:80%;
+        justify-content: center;
+    }
+
+    .offer-section{
+        height: 100vh;
+    }
+
+    .first-group{
+        margin-bottom: 1rem;
+    }
+    .offer-icons{
+        flex-wrap: wrap;
+        width:90%;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .first-group, .second-group{
+        width:80%;
+        justify-content: center;
+    }
+
+    .offer-section{
+        height: 100vh;
+    }
+
+    .first-group{
+        margin-bottom: 1rem;
+    }
+    .offer-icons{
+        flex-wrap: wrap;
+        width:90%;
+    }
+    .icon{
+        width:35px;
+        height: 35px;
+    }
+    .desc{
+        font-size:10px;
+    }
+}
+
+.about-section{
+    width:100%;
+    height:100vh;
+}
