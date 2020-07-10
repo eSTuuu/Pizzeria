@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("/images/patrick-fore-m9qWesqRN0M-unsplash.jpg");
+    background-image: url("patrick-fore-m9qWesqRN0M-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -89,7 +89,7 @@ body{
 .offer-section{
     width:100%;
     height: 70vh;
-    background-image: url('/images/d6iuhnh-22a84a73-8669-48aa-aaac-47e886276b7c.jpg');
+    background-image: url('d6iuhnh-22a84a73-8669-48aa-aaac-47e886276b7c.jpg');
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -267,7 +267,7 @@ body{
 .about-section{
     width:100%;
     height:70vh;
-    background-image: url('/images/sarang-pande-5djt8Pkqdc4-unsplash.jpg');
+    background-image: url('sarang-pande-5djt8Pkqdc4-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
