@@ -88,7 +88,7 @@ body{
 
 .offer-section{
     width:100%;
-    height: 62vh;
+    height: 70vh;
     background-image: url('/images/d6iuhnh-22a84a73-8669-48aa-aaac-47e886276b7c.jpg');
     background-size:cover;
     background-position: center;
@@ -103,7 +103,6 @@ body{
     text-align: center;
     font-size:40px;
     color:white;
-    padding-top:4rem;
 }
 
 .desc{
@@ -267,5 +266,145 @@ body{
 
 .about-section{
     width:100%;
-    height:100vh;
+    height:70vh;
+    background-image: url('/images/sarang-pande-5djt8Pkqdc4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.897);
+    padding: 30px 40px;
+}
+.title-about{
+    text-align:center;
+    font-weight: 400;
+    font-size:30px;
+    margin: 20px 0;
+}
+.border{
+    border: 2px dotted rgb(65, 65, 65);
+    padding: 10px 25px;
+}
+
+.about-desc{
+    text-align:center;
+    width:80%;
+    margin: 0 auto 20px auto;
+    font-size:20px;
+    line-height: 2;
+    color: rgb(58, 58, 58);
+}
+
+@media only screen and (max-width:1440px){
+    .card{
+        width:60%;
+    }
+}
+
+@media only screen and (max-width:1135px){
+    .card{
+        width:70%;
+    }
+    .about-desc{
+        font-size:18px;
+    }
+}
+
+@media only screen and (max-width:885px){
+    .about-desc{
+        font-size:15px;
+    }
+
+    .border{
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width:725px){
+    .card{
+        width:85%;
+    }
+
+    .about-desc{
+        font-size:15px;
+    }
+
+    .border{
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .card{
+        width:100%;
+        padding:30px 30px;
+    }
+
+    .about-desc{
+        font-size:13px;
+        width:95%;
+    }
+
+    .border{
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width:420px){
+    .card{
+        width:100%;
+        padding:25px 35px;
+    }
+
+    .about-desc{
+        font-size:13px;
+        width:100%;
+    }
+
+    .border{
+        padding: 0;
+        border: none;
+    }
+}
+
+.footer{
+    width: 100%;
+    background-color: #111821;
+    color:white;
+    padding: 40px 0;
+}
+
+.social-title{
+    text-align:center;
+    font-weight: 400;
+    font-size:14px;
+}
+
+.socials{
+    width:70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+}
+
+.social-logo{
+    width:24px;
+    height:24px;
+}
+
+.social-info{
+    font-size:14px;
 }
