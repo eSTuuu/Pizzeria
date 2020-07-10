@@ -8,22 +8,35 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8e97b3dc2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="nav">
             <a href="index.html" class="logo-link">
                 <img src="pizza.svg" class="logo" alt="Pizza logo">
             </a>
-            <ul class="nav-list">
-                <a href="menu.html">
-                    <li class="nav-list-item">Menu</li>
-                </a>
-                <a href="contact.html">
-                    <li class="nav-list-item">Kontakt</li>
-                </a>
-            </ul>
+            <button class="toggle-collapse">
+                <i class="fas fa-align-justify"></i>
+            </button>
+            <div class="navbar-collapse">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#offer">Nasza oferta</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#about">Coś o nas</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#contact"> Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <main>
@@ -32,7 +45,7 @@
             <h1 class="title">Nazwa</h1>
         </section>
         <!-- offer section -->
-        <section class="offer-section">
+        <section id="offer" class="offer-section">
             <h1 class="title-offer">Nasz oferta</h1>
             <p class="desc">Najlepsza Margherita, duża Capriciosa czy Wegetariańska na cienkim cieście? Wszystkie
                 przygotowywane
@@ -67,7 +80,7 @@
             </div>
         </section>
         <!-- about section -->
-        <section class="about-section">
+        <section id="about" class="about-section">
             <div class="card">
                 <div class="border">
                     <h1 class="title-about">Coś o nas!</h1>
@@ -78,6 +91,18 @@
                         tworzone są przez przyjaciół dla przyjaciół.</p>
                 </div>
             </div>
+        </section>
+        <!-- contact section -->
+        <section id="contact" class="contact-section">
+            <form class="contact-form" action="">
+                <header class="contact-header">Napisz do nas!</header>
+                <input class="input" placeholder="Imię" type="text">
+                <input class="input" placeholder="Nazwisko" type="text">
+                <input class="input" placeholder="Email" type="text">
+                <input class="input" placeholder="Temat" type="text">
+                <textarea placeholder="Treść" class="ta" rows="10"></textarea>
+                <button class="btn">Wyślij</button>
+            </form>
         </section>
         <!-- footer -->
         <footer class="footer">
@@ -92,8 +117,38 @@
                     <p class="social-info">Facebook</p>
                 </div>
             </div>
+            <div class="footer-info">
+                <div class="infos">
+                    <p class="name">Nazwa Miejscowość</p>
+                    <p class="street">ul. Przykładowa 5</p>
+                    <p class="post-code">Kod pocztowy: 12-345</p>
+                </div>
+
+                <div class="infos">
+                    <p class="hour">Jesteśmy czynni:</p>
+                    <p class="hour">Pon - Sob od 11 - 23</p>
+                    <p class="hour">Niedziela od 12 - 23</p>
+                </div>
+                <div class="infos">
+                    <p class="email">Email: kontakt@nazwa.pl</p>
+                    <p class="number">Telefon 1: 123456789</p>
+                    <p class="number">Telefon 2: 123456789</p>
+                </div>
+            </div>
+
         </footer>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.toggle-collapse').click(function () {
+                $('.navbar-collapse').toggleClass('collapse');
+            })
+        })
+    </script>
 </body>
 
 </html>
